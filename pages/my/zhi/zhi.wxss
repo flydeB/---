@@ -1,0 +1,8 @@
+/* pages/my/zhi/zhi.wxss */
+.zhi{
+  line-height: 100rpx;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  background: #fff;
+  border-bottom:2rpx solid #f6f6f6; 
+}

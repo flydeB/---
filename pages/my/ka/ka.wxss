@@ -1,0 +1,33 @@
+/* pages/my/ka/ka.wxss */
+.ka{
+  margin: 0 20rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  overflow: hidden;
+}
+.ka-top{
+  background: #f39800;
+  color: #fff;
+  height: 129rpx;
+  line-height: 129rpx;
+  font-size: 30rpx;
+  padding-left: 42rpx;
+}
+.ka-bottom{
+  background: #fff;
+  font-size: 22rpx;
+  height: 79rpx;
+  line-height: 79rpx;
+  padding-left: 30rpx;
+  padding-right: 18rpx;
+}
+.ka-an{
+  height: 34rpx;
+  line-height: 34rpx;
+  padding: 0 10rpx;
+  background: #f39800;
+  color: #fff;
+  display: inline;
+  margin-top: 26rpx;
+}

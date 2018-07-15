@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/my/my",
+    "pages/index/index",
+    "pages/my/ding/ding",
+    
+    "pages/yd/yd",
+    "pages/my/ka/ka",
+    "pages/calender/index",
+    "pages/index/indexData/indexData",
+   
+    
+    "pages/my/yuan/yuan",
+    "pages/my/q/q",
+    "pages/my/zhi/zhi",
+    
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0abbdb",
+    "navigationBarTitleText": "塘南人家",
+    "navigationBarTextStyle":"white"
+  }
+}

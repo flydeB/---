@@ -1,0 +1,184 @@
+<!--pages/index/indexData/indexData.wxml-->
+
+<loading wx:if="{{hidden}}">
+  加载中...
+</loading>
+
+
+
+
+<view wx:else="{{hidden}}">
+  <swiper indicator-dots="ture" indicator-color="#75716b" indicator-active-color="#fff" autoplay="true" circular="true">
+    <block wx:for="{{lists.jdcontent}}" wx:key="this">
+      <swiper-item>
+
+        <image src="{{url}}{{item}}" class="slide-image" />
+
+      </swiper-item>
+    </block>
+    <!-- <swiper-item>
+      <image src="/image/banner.png" class="slide-image" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/banner.png" class="slide-image" />
+    </swiper-item> -->
+  </swiper>
+  <!--酒店头部  -->
+  <view class='clearfix indexData-name'>
+    <view class='fl'>
+      {{lists.jdname}}
+    </view>
+    <view class='fr indexData-di'>
+      <image src='/image/di.png' class='indexData-di-icon'></image>
+      广州
+    </view>
+  </view>
+  <view class='indexData-content'>
+    <view class='indexData-content-top'>
+      <view class='{{act==1?"act":""}}' bindtap='act' data-num="1">预定</view>
+      <view class='{{act==2?"act":""}}' bindtap='act' data-num="2">点评</view>
+      <view class='{{act==3?"act":""}}' bindtap='act' data-num="3">详情</view>
+    </view>
+    <view class='indexData-content-sj'>
+      <!-- <view class=''>
+        
+        
+      </view> -->
+      <view class="indexData-content-sj-one" bindtap="bindViewTap"> 
+        <view>入店时间</view>
+          <view class="picker"> 
+            {{date}} 
+          </view> 
+        </view> 
+      <view class='indexData-content-sj-two'>
+        至
+      </view>
+      <view class='indexData-content-sj-one' bindtap="bindViewTap">
+        <view>离店时间</view>
+          <view class="picker"> 
+            {{tomorrow}} 
+          </view> 
+        </view>
+    </view>
+
+    <!--预定内容  -->
+    <view wx:if="{{act == 1}}">
+    <!--没有房间数据  -->
+      <view wx:if="{{list == ''}}">
+        没有房间可以预定
+      </view>
+      <!--有房间数据  -->
+      <view wx:else>
+        <block wx:for="{{list}}" wx:key="this">
+          <view class='indexData-content-text clearfix'>
+            <view class='fl'>
+              <image src='{{url}}{{item.RoomImg}}' class='indexData-content-text-img' bindtap='image' id='{{index}}'></image>
+            </view>
+            <view class='fl'>
+              <view class='text-name'>{{item.RoomName}}</view>
+              <view class='text-data'>
+                <text>可住{{item.RoomRenShu}}人</text>
+                <text>{{item.RoomPingFang}}平方</text>
+                <text>{{item.RoomChuangHu}}窗</text>
+                <text>{{item.RoomZaoCan}}早</text>
+              </view>
+              <view class='text-money'>￥{{item.RoomPrice}}</view>
+            </view>
+            <view class='text-ding' bindtap='ding' id="{{index}}">立即预订</view>
+          </view>
+        </block>
+      </view>
+
+
+
+    </view>
+    <!--点评内容  -->
+    <view wx:elif="{{act == 2}}">
+      <view class='indexData-dian'>
+        <view>
+          <text class='indexData-dian-num'>{{lists.jdpingfen}}</text>分
+        </view>
+        <view class='indexData-num'>
+          全部评论
+          <text>{{lists.jdpinglun}}条</text>
+        </view>
+      </view>
+      <view class='indexData-dian-text'>
+        <view class='indexData-dian-text-top'>
+          <text class='indexData-dian-text-name'>糖糖</text>
+          <text class='indexData-dian-text-num'>5分</text>
+        </view>
+        <view class='indexData-dian-text-content'>
+          干净....
+        </view>
+      </view>
+    </view>
+    <!--详情内容  -->
+    <view wx:else>
+      <view class='indexData-xiang'>
+        <view class='indexData-xiang-tltie'>
+          <text class='icon'></text>酒店服务</view>
+        <view class='indexData-xiang-text clearfix'>
+          <text wx:if="{{lists.jdtingche == '停车'}}">停车</text>
+          <text wx:if="{{lists.jdwifi == 'wifi'}}">Wifi</text>
+          <text wx:if="{{item.jdcanting == '餐厅'}}">餐厅</text>
+        </view>
+      </view>
+      <view class='indexData-xiang'>
+        <view class='indexData-xiang-tltie'>
+          <text class='icon'></text> 酒店介绍</view>
+        <view class='indexData-xiang-tltie'>{{lists.jdbeiyongyihao}}</view>
+
+      </view>
+    </view>
+  </view>
+  <!--预订弹窗  -->
+  <view class='indexData-tan' wx:if="{{xiang}}" bindtap='none'>
+    <view class='indexData-tan-content' catchtap='show'>
+      <view class='indexData-tan-content-top'>
+        <view class='color'>{{ding.RoomName}}</view>
+      </view>
+      <view class='indexData-tan-xiang'>
+        <view class='indexData-xiang-text clearfix'>
+          <text class='fl'>{{ding.RoomZaoCan}}早餐</text>
+          <text class='fl'>{{ding.RoomChuangHu}}窗户</text>
+          <text class='fl'>{{ding.RoomPingFang}}平米</text>
+          <text class='fl'>可入住{{ding.RoomRenShu}}人</text>
+          <text class='fl'>{{ding.RoomWifi}}WIFI</text>
+        </view>
+      </view>
+      <view class='indexData-tan-content-tops'>
+        <view class='red'>订单须知</view>
+        <view class='indexData-tan-content-top-text'>
+          <text>预付</text>
+          <text>立即线上支付</text>
+        </view>
+        <view class='indexData-tan-content-top-text'>
+          <text>随时取消</text>
+          <text>订单预约后，可取消或更改</text>
+        </view>
+      </view>
+      <view class='indexData-tan-content-bottom'>
+        <text class=' red'>￥{{ding.RoomPrice}}</text>
+        <view class='index-tan-content-an' bindtap='yd'>
+          立即预约
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--点击图片的轮播  -->
+  <view class='indexData-tan' wx:if="{{luen}}" bindtap='luenHide'>
+    <swiper indicator-dots="ture" indicator-color="#75716b" indicator-active-color="#fff" autoplay="true" circular="true" class='luen'>
+      <block wx:for="{{images}}" wx:key="this">
+        <swiper-item>
+
+          <image src="{{url}}{{item}}" class="slide-image" />
+
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+</view>

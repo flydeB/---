@@ -1,0 +1,61 @@
+/* pages/yd/yd.wxss */
+.yd{
+  padding: 20rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+  background: #fff;
+  font-size: 28rpx;
+}
+.mar{
+  margin-bottom: 20rpx;
+}
+.yds{
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  font-size: 28rpx;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+}
+.one{
+  width: 25%;
+  line-height: 56rpx;
+}
+.two{
+  width: 70%;
+  line-height: 56rpx;
+  display: flex;
+  flex-direction: row;
+}
+.two input{
+  height: 56rpx;
+  line-height: 56rpx;
+  width: 100%;
+}
+.yd-qx{
+  margin-top: 15rpx;
+  padding-left: 20rpx;
+}
+
+.yd-qx text{
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+.yd-bottom{
+  position: fixed;
+  bottom: 0;
+  line-height: 100rpx;
+  width: 100%;
+  background: #fff;
+}
+.red{
+  color: red;
+}
+.index-tan-content-an{
+position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 58rpx;
+  background: #0abbdb;
+  color: #fff;
+
+}

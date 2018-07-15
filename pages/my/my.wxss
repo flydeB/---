@@ -1,0 +1,95 @@
+/* pages/my/my.wxss */
+.my-content{
+  margin-bottom: 100rpx;
+}
+.my-content-top{
+  position: relative;
+  overflow: hidden;
+  height: 430rpx;
+}
+.my-image{
+  width: 100%;
+  height: 100%;
+}
+.my-content-top-img{
+  width: 186rpx;
+  height: 186rpx;
+  padding: 12rpx;
+  top: 28rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.my-content-top-img image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border:2rpx solid #d9f4f9; 
+}
+.my-content-name{
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+}
+.my-content-top-yuan{
+  line-height: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.my-images{
+  width: 40rpx;
+  height: 34rpx;
+  margin-left: 68rpx;
+  margin-right: 25rpx;
+  vertical-align: middle;
+  padding-bottom: 10rpx;
+}
+.my-content-top-yuan-text{
+  font-size: 28rpx;
+}
+.my-content-bottom{
+  background: #fff;
+  line-height: 100rpx;
+  margin-top: 20rpx;
+}
+/*底部  */
+.index-foot{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  background: #0abbdb;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+}
+.index-foot view{
+  width: 50%;
+  height: 100%;
+  line-height: 100rpx;
+  text-align: center;
+}
+.index-foot-img{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-right: 18rpx;
+  margin-bottom: 10rpx;
+}
+.dneglu{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

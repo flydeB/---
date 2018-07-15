@@ -1,0 +1,47 @@
+<!--pages/my/my.wxml-->
+<view>
+  <view class='my-content'>
+    <view class='my-content-top'>
+      <image src='/image/my-bj.png' mode='scaleToFill' class='my-image'></image>
+      <view class='my-content-top-img' wx:if="{{userInfo.avatarUrl != null}}">
+        <image src='{{userInfo.avatarUrl}}'></image>
+        <text class='my-content-name'>{{userInfo.nickName}}</text>
+      </view>
+      <view class='my-content-top-img' wx:else>
+         <button open-type="getUserInfo" class='dneglu' bindgetuserinfo="getUserInfo">请登录</button>
+      </view>
+      <view class='my-content-top-yuan' bindtap='yuan'>
+        <image src='/image/guang.png' mode='scaleToFill' class='my-images'></image>
+        <text class='my-content-top-yuan-text'>会员权益</text>
+      </view>
+    </view>
+    <view class='my-content-bottom' bindtap='q'>
+        <image src='/image/q.png' mode='scaleToFill' class='my-images'></image>
+        <text class='my-content-top-yuan-text'>我的优惠券</text>
+    </view>
+    <view class='my-content-bottom' bindtap='ka'>
+        <image src='/image/kaquan.png' mode='scaleToFill' class='my-images'></image>
+        <text class='my-content-top-yuan-text'>卡券</text>
+    </view>
+     <view class='my-content-bottom' bindtap='ding'>
+        <image src='/image/dingdan.png' mode='scaleToFill' class='my-images'></image>
+        <text class='my-content-top-yuan-text'>订单</text>
+    </view>
+     <view class='my-content-bottom' bindtap='zhi'>
+        <image src='/image/szhi.png' mode='scaleToFill' class='my-images'></image>
+        <text class='my-content-top-yuan-text'>设置</text>
+    </view>
+  </view>
+  <!--酒店底部  -->
+    <view class='index-foot'>
+      <view bindtap='shouye'>
+      <image src='/image/jiudian.png' class='index-foot-img' ></image>
+      <text>酒店</text>
+      </view>
+      <view bindtap='my'>
+      <image src='/image/my.png' class='index-foot-img' ></image>
+      <text>我的</text>
+      </view>
+    </view>
+
+</view>

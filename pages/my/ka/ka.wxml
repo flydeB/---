@@ -1,0 +1,14 @@
+<!--pages/my/ka/ka.wxml-->
+<view>
+  <block wx:for="{{list}}" wx:key="this">
+  <view class='ka'>
+    <view class='ka-top'> {{item.YouHuiQuanName}}</view>
+    <view class='ka-bottom clearfix'>
+      <text class='fl'>有效期至 {{item.YouHuiQuanStopTime}}</text>
+      <text class='ka-an fr' bindtap="ling" id="{{item.ID}}">领取</text>
+    </view>
+  </view>
+</block>
+</view>
+
+

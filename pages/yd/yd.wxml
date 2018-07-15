@@ -1,0 +1,40 @@
+<!--pages/yd/yd.wxml-->
+<view class='mar'>
+  <view class='yd'>
+    {{fjname}}
+  </view>
+  <view class='yd'>
+    <view>
+      {{kai}}至{{jie}}
+    </view>
+  </view>
+</view>
+<view class='yds mar'>
+  <view class='one'>房间数</view>
+  <view class='two'>
+    <input type='number' class='two-text' placeholder='请输入房间数' bindinput="num" value='{{nums}}' bindblur='one'></input></view>
+</view>
+<view>
+  <view class='yds'>
+    <view class='one'>姓名</view>
+    <view class='two'>
+      <input type='text' placeholder='请输入姓名' bindinput="name"></input>
+    </view>
+  </view>
+  <view class='yds'>
+    <view class='one'>联系方式</view>
+    <view class='two'>
+      <input type='number' placeholder='请输入联系方式' bindinput="phone"></input>
+    </view>
+  </view>
+  <view class="yd-qx">
+    <text>取消规则</text>
+    <text>随时取消</text>
+  </view>
+  <view class='indexData-tan-content-bottom yd-bottom'>
+    <text class='red'>￥{{money}}</text>
+    <view class='index-tan-content-an' bindtap='over'>
+      立即预约
+    </view>
+  </view>
+</view>

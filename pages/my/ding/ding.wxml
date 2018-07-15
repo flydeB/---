@@ -1,0 +1,16 @@
+<!--pages/my/ding/ding.wxml-->
+<view class='ding'>
+  <block wx:for="{{list}}" wx:key="this">
+    <view  class='ding-content'>
+      <view class='ding-content-top clearfix'>
+        <text class='fl'>{{item.OrderJiuDianName}}</text>
+        <text class='fr' wx:if="{{item.OrderState == '待付款'}}" bindtap='money' id="{{index}}">{{item.OrderState}}</text>
+        <text class='fr' wx:else>{{item.OrderState}}</text>
+      </view>
+      <view class='ding-content-text'>
+        <view class=''>{{item.OrderJianShu}} <text class='jian'>/</text>总价￥{{item.OrderMoney}} </view>
+        <view class=''>{{item.OrderStartTime}}至{{item.OrderStopTime}}</view>
+      </view>
+    </view>
+  </block>
+</view>

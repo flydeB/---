@@ -1,0 +1,245 @@
+/* pages/index/indexData/indexData.wxss */
+.slide-image{
+  width: 100%;
+  height: 490rpx;
+}
+swiper{
+  height: 490rpx;
+}
+.act{
+  border-bottom:4rpx solid #0abbdb; 
+}
+.indexData-name{
+  line-height: 100rpx;
+  padding: 0 20rpx;
+  background: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+.indexData-di{
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #222222;
+}
+.indexData-di-icon{
+  width: 19rpx;
+  height: 23rpx;
+  margin-right: 5rpx;
+  vertical-align: middle;
+}
+.indexData-content-top{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #eeeeee;
+  background: #fff;
+  line-height: 62rpx;
+}
+.indexData-content-top view{
+  width: 33%;
+  text-align: center;
+  line-height: 62rpx;
+  font-size: 30rpx;
+}
+.indexData-content-sj{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #eeeeee;
+  background: #fff;
+  line-height: 90rpx;
+  font-size: 24rpx;
+}
+.indexData-content-sj-one{
+  width: 38%;
+  text-align: center;
+  line-height: 50rpx;
+}
+.indexData-content-sj-two{
+  width: 24%;
+  text-align: center;
+  box-sizing: border-box;
+  border-left: 2rpx solid #eeeeee;
+  border-right: 2rpx solid #eeeeee;
+}
+.indexData-content-text{
+  padding: 20rpx;
+  background: #fff;
+  position: relative;
+  border-bottom: 2rpx solid #f6f6f6;
+}
+.indexData-content-text-img{
+  width: 200rpx;
+  height: 130rpx;
+  margin-right: 25rpx;
+}
+.text-name{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.text-data text{
+  font-size: 20rpx;
+  margin-right: 12rpx;
+}
+.text-money{
+  color: red;
+  font-size: 24rpx;
+  margin-top: 15rpx;
+}
+.text-ding{
+  width: 110rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  color: #fff;
+  background: #0abbdb;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  font-size: 22rpx;
+}
+
+/*点评内容  */
+.indexData-dian{
+  text-align: center;
+  background: #fff;
+  color: red;
+  font-size: 24rpx;
+  padding-top: 20rpx;
+  padding-bottom: 15rpx;
+  border-bottom:2rpx solid #f6f6f6; 
+}
+.indexData-dian-num{
+  font-size: 50rpx;
+  margin-right: 10rpx;
+}
+.indexData-num{
+  color: #666666;
+}
+.indexData-dian-text{
+  padding: 20rpx;
+  background: #fff;
+  border-bottom: 2rpx solid #f6f6f6;
+}
+.indexData-dian-text-top{
+  margin-bottom: 20rpx;
+}
+.indexData-dian-text-name{
+  font-size: 24rpx;
+  color: #666666;
+  margin-right:30rpx; 
+}
+.indexData-dian-text-num{
+  /* width: 68rpx; */
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size: 22rpx;
+  background: #0abbdb;
+  color: #fff;
+  padding: 0 15rpx;
+}
+.indexData-dian-text-content{
+  font-size: 24rpx;
+  color: #313131;
+}
+
+/*详情内容  */
+.indexData-xiang{
+  padding: 20rpx;
+  background: #fff;
+  border-bottom: #f6f6f6;
+}
+.indexData-xiang-tltie{
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  line-height: 35rpx;
+}
+.indexData-xiang-text text{
+  width: 25%;
+  padding-left: 22rpx;
+  line-height: 40rpx;
+  background: #f1fbfd;
+  font-size: 24rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  display: inline-block;
+}
+.icon{
+  width: 10rpx;
+  height: 10rpx;
+  background: #0abbdb;
+  display: inline-block;
+  margin-bottom: 5rpx;
+  margin-right: 10rpx;
+  border-radius: 50%;
+}
+
+
+/*预定弹窗  */
+.indexData-tan{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+  
+}
+.indexData-tan-content{
+  width: 670rpx;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%)translateY(-50%);
+  border-radius: 15rpx;
+  overflow: hiddex;
+}
+.indexData-tan-content-top{
+  padding: 45rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+}
+.color{
+  color: #1ac0dd;
+  font-size: 30rpx;
+}
+.indexData-tan-content-top-text{
+  font-size: 24rpx;
+  margin-top: 8rpx;
+}
+.indexData-tan-xiang{
+  padding:30rpx 45rpx;
+}
+.red{
+  color: red;
+}
+.indexData-tan-content-tops{
+  padding: 45rpx;
+}
+.indexData-tan-content-top-text text{
+  width: 50%;
+  display: inline-block;
+}
+.indexData-tan-content-bottom{
+  padding-left: 45rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-top: 2rpx solid #f6f6f6;
+  position: relative;
+}
+.index-tan-content-an{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 58rpx;
+  background: #0abbdb;
+  color: #fff;
+  font-size: 30rpx;
+}
+.luen{
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}

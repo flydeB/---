@@ -1,0 +1,9 @@
+<!--pages/my/zhi/zhi.wxml-->
+<view class='zhi'>
+  授权设置
+
+</view>
+<view class='zhi'>
+  清除缓存
+
+</view>

@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<loading wx:if="{{hidden}}">
+  加载中...
+</loading>
+
+<view class='index' wx:else>
+  <view class='index-content'>
+    <!--酒店内容  -->
+    <block wx:for="{{list}}" wx:key="this">
+      <view bindtap='xiang' id="{{item.ID}}">
+        <image src='{{url}}{{item.jdimg}}' class='index-image'></image>
+        <view class='clearfix index-title'>
+          <text class='fl index-name'>{{item.jdname}}</text>
+          <text class='fr index-money'><text class='index-money-num'>￥{{item.jdprice}}</text> 起</text>
+        </view>
+        <view class='clearfix index-title'>
+          <text class='fl index-money'>{{item.jdpingfen}}分 <text class='fen'>|</text> <text wx:if="{{item.jdpinglun == null}}">0</text><text wx:else>{{item.jdpinglun}}</text>条评论</text>
+          <view class='fr'>
+            <text class='index-ye' wx:if="{{item.jdtingche == '停车'}}">停车</text>
+            <text class='index-ye' wx:if="{{item.jdwifi == 'wifi'}}">Wifi</text>
+            <text class='index-ye' wx:if="{{item.jdcanting == '餐厅'}}">餐厅</text>
+          </view>
+        </view>
+        <view class='index-title'>
+          <text class='index-money'>广州天河区<text class='fen'></text> 1km</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!--酒店底部  -->
+  <view class='index-foot'>
+    <view bindtap='shouye'>
+      <image src='/image/jiudian.png' class='index-foot-img'></image>
+      <text>酒店</text>
+    </view>
+    <view bindtap='my'>
+      <image src='/image/my.png' class='index-foot-img'></image>
+      <text>我的</text>
+    </view>
+  </view>
+</view>

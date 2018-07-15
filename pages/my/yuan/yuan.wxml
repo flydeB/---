@@ -1,0 +1,75 @@
+<!--pages/my/yuan/yuan.wxml-->
+<view class='yuan'>
+  <view class='yuan-top'>
+    <view class='clearfix yuan-top-text'>
+      <view class='fl'>
+        <view class='fl'>
+        <image src='{{userInfo.avatarUrl}}' class='yuan-img'></image>
+        </view>
+        <view class='fl'>
+          <view class='yuan-name'>{{userInfo.nickName}}</view>
+          <view class='yuan-hui'>
+            <image src='/image/guangs.png' class='yuan-icon'></image>
+            <text>普通会员</text>
+          </view>
+        </view>
+      </view>
+      <view class='fr yuan-hao'>
+        NO.001
+      </view>
+    
+    </view>
+    <view class="yuan-money">账户余额</view>
+    <view class='clearfix '>
+      <text class='fl yuan-moneys'>￥0.00</text>
+      <text class='fr yuan-zhi'>充值</text>
+    </view>
+  </view>
+  <view class='yuan-num'>
+    <view>
+      <image src='/image/fen.png' class='yuan-num-icon' mode='scaleToFill'></image><text>积分200</text>
+    </view>
+    <view>
+      <image src='/image/jiao.png' class='yuan-num-icon ' mode='scaleToFill'></image><text>交易记录</text>
+    </view>
+  </view>
+  <view class='yuan-bottom'>
+    <view class='yuan-bottom-view'>会员权益</view>
+    <view class='yuan-bottom-view'>
+      <view class=''>
+        <image src='/image/yi.png' class='yuan-bottom-icon'></image>
+        <text>会员权益</text>
+      </view>
+      <view class='yuan-bottom-views'>
+        当前等级折扣9.9折
+      </view>
+    </view>
+    <view class='yuan-bottom-view'>
+      <view class=''>
+        <image src='/image/money.png' class='yuan-bottom-icon'></image>
+        <text>消费积分</text>
+      </view>
+      <view class='yuan-bottom-views'>
+        会员积分返回
+      </view>
+    </view>
+    <view class='yuan-bottom-view'>
+      <view class=''>
+        <image src='/image/huan.png' class='yuan-bottom-icon'></image>
+        <text>积分兑换</text>
+      </view>
+      <view class='yuan-bottom-views'>
+        积分可兑换代金券使用
+      </view>
+    </view>
+    <view class='yuan-bottom-view'>
+      <view class=''>
+        <image src='/image/zhuang.png' class='yuan-bottom-icon'></image>
+        <text>会员等级</text>
+      </view>
+      <view class='yuan-bottom-views'>
+        消费越高等级越高
+      </view>
+    </view>
+  </view>
+</view>

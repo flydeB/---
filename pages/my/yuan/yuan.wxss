@@ -1,0 +1,101 @@
+/* pages/my/yuan/yuan.wxss */
+.yuan-top{
+  margin: 20rpx;
+  background: #cfa972;
+  border-radius: 10rpx;
+  padding: 25rpx 22rpx;
+}
+.yuan-top-text{
+  margin-bottom: 70rpx;
+}
+.yuan-img{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  border: 2rpx solid #fff;
+  margin-right: 30rpx;
+}
+.yuan-icon{
+  width: 24rpx;
+  height: 20rpx;
+  margin-right: 10rpx;
+}
+.yuan-name{
+  font-size: 28rpx;
+  color: #fff;
+  margin-bottom: 15rpx;
+}
+.yuan-hui{
+  color: #fff;
+  font-size: 24rpx;
+}
+.yuan-hao{
+  color: #fff;
+  font-size: 20rpx;
+}
+.yuan-money{
+  color: #fff;
+  font-size: 24rpx;
+  margin-bottom: 28rpx;
+}
+.yuan-moneys{
+  color: #fff;
+  font-size: 36rpx;
+}
+.yuan-zhi{
+  width: 90rpx;
+  height: 43rpx;
+  color: #fff;
+  line-height: 43rpx;
+  text-align: center;
+  font-size: 23rpx;
+  border: 2rpx solid #fff;
+
+}
+.yuan-num{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 18rpx;
+}
+.yuan-num view{
+  width: 50%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 80rpx;
+  background: #fff;
+}
+.yuan-num-icon{
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+  margin-right: 8rpx;
+vertical-align: middle;
+}
+.yuan-num view:nth-child(1){
+  border-right: 2rpx solid #e5e5e5;
+  box-sizing: border-box;
+}
+.yuan-bottom-view{
+  
+padding-left: 20rpx;
+  border-bottom:2rpx solid #f6f6f6; 
+  background: #fff;
+  line-height: 72rpx;
+  font-size: 28rpx;
+  padding-bottom: 20rpx;
+  font-weight: 600;
+}
+.yuan-bottom-views{
+    padding-left: 50rpx;
+    font-size: 26rpx;
+    color: #7a7a7a;
+    line-height: 30rpx;
+    font-weight: 500;
+}
+.yuan-bottom-icon{
+  width: 30rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 15rpx;
+}

@@ -1,0 +1,18 @@
+<!--pages/my/q/q.wxml-->
+<!--pages/my/ka/ka.wxml-->
+<view wx:if="{{list == ''}}">
+  暂时没有红包可以领取
+</view>
+<view wx:else>
+  <block wx:for="{{list}}" wx:key="this">
+  <view class='ka'>
+    <view class='ka-top'> {{item.YouHuiQuanName}}</view>
+    <view class='ka-bottom clearfix'>
+      <text class='fl'>有效期至 {{item.YouHuiQuanStopTime}}</text>
+    </view>
+  </view>
+</block>
+</view>
+
+
+

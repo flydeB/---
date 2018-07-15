@@ -1,0 +1,42 @@
+/* pages/my/ding/ding.wxss */
+.ding-content{
+  background: #fff;
+  color:#666666;
+  margin-bottom: 20rpx;
+}
+.ding-content-top{
+  padding: 0 23rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+  font-size: 28rpx;
+}
+.ding-content-text{
+   padding:0 23rpx;
+   padding-bottom: 25rpx;
+  font-size: 28rpx;
+    border-bottom: 2rpx solid #f6f6f6;
+}
+.ding-content-text view{
+  margin-top: 25rpx;
+}
+.jian{
+  margin: 0 12rpx;
+}
+.ding-content-bottom{
+  line-height: 68rpx;
+  padding: 0 23rpx;
+  font-size: 24rpx;
+}
+.color{
+  color: #0abbdb;
+}
+.an{
+  background: #0abbdb;
+  color: #fff;
+  height: 40rpx;
+  line-height: 0.6em;
+  margin-top: 16rpx;
+  font-size: 24rpx;
+  padding: 0 15rpx;
+  display: block;
+}
